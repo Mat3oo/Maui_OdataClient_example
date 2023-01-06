@@ -50,6 +50,8 @@
 
 	<ItemGroup>
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
+		<PackageReference Include="Microsoft.OData.Client" Version="7.13.0" />
+		<PackageReference Include="Microsoft.OData.ModelBuilder" Version="1.0.9" />
 	</ItemGroup>
 
 </Project>
