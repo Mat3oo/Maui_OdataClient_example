@@ -3,7 +3,7 @@
 public partial class MainPage : ContentPage
 {
 	int count = 0;
-    readonly ODataServiceContext odataContext;
+	readonly ODataServiceContext odataContext;
 
 	public MainPage()
 	{
@@ -17,9 +17,15 @@ public partial class MainPage : ContentPage
 		{
 			var result = odataContext.People.Execute();
 		}
-		catch(Exception ex)
+		catch (Exception ex)
 		{
-			await Application.Current.MainPage.DisplayPromptAsync("OData error", $"{ex.Message}\n\n{ex.StackTrace}", "Ok");
+			string displayMessage = $"{ex.Message}\n\n{ex.StackTrace}";
+			const string title = "OData error";
+#if MACCATALYST
+			_ = await DisplayPromptAsync(title, displayMessage, "Ok");
+#else
+			await DisplayAlert(title, displayMessage, "Ok");
+#endif
 		}
 
 		count++;
@@ -32,4 +38,3 @@ public partial class MainPage : ContentPage
 		SemanticScreenReader.Announce(CounterBtn.Text);
 	}
 }
-
