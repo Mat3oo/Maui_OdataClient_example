@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31611.283
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "testOdataMaui", "testOdataMaui.csproj", "{57F1AF7B-9BA0-49A9-B74D-B1736441FB49}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "testOdataMaui", "Maui_OdataClient_example\testOdataMaui.csproj", "{57F1AF7B-9BA0-49A9-B74D-B1736441FB49}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "odataMacCatalystExample", "odataMacCatalystExample\odataMacCatalystExample.csproj", "{869F56ED-7762-4A2F-9078-1F29DE285D77}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{C12B0EF6-DEC5-44AD-925A-C3477B79BB0A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,6 +21,14 @@ Global
 		{57F1AF7B-9BA0-49A9-B74D-B1736441FB49}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{57F1AF7B-9BA0-49A9-B74D-B1736441FB49}.Release|Any CPU.Build.0 = Release|Any CPU
 		{57F1AF7B-9BA0-49A9-B74D-B1736441FB49}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{869F56ED-7762-4A2F-9078-1F29DE285D77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{869F56ED-7762-4A2F-9078-1F29DE285D77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{869F56ED-7762-4A2F-9078-1F29DE285D77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{869F56ED-7762-4A2F-9078-1F29DE285D77}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C12B0EF6-DEC5-44AD-925A-C3477B79BB0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C12B0EF6-DEC5-44AD-925A-C3477B79BB0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C12B0EF6-DEC5-44AD-925A-C3477B79BB0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C12B0EF6-DEC5-44AD-925A-C3477B79BB0A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
